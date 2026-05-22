@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: #f8fafc;
+  --color-foreground: #1f2937;
+  --brand-navy: #0f172a;
+  --brand-navy-strong: #08111f;
+  --brand-charcoal: #111827;
+  --brand-steel: #64748b;
+  --brand-copper: #b87333;
+  --brand-copper-strong: #985d2c;
+  --brand-gold: #c99700;
+  --brand-surface: #ffffff;
+  --brand-surface-muted: #e2e8f0;
+}
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+::selection {
+  background: rgba(184, 115, 51, 0.28);
+  color: #ffffff;
+}
+
+img {
+  display: block;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.grid-fade {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, transparent, black 18%, black 84%, transparent);
+}
+
+.slate-grid {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+input,
+textarea,
+select,
+button,
+a {
+  transition:
+    color 200ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease,
+    opacity 200ms ease;
+}

@@ -1,0 +1,539 @@
+# Codex Website Recreation Brief
+
+## Goal
+
+Create a professional mining / metals / industrial company website inspired by modern Canadian mining-service websites. The site should feel credible, clean, corporate, and practical. It should work as a company profile / business-card website for a metals or mining-related business.
+
+Primary domain target: `www.llmetaltech.com`
+
+Secondary domain: `www.lglmetal.com` can redirect to the primary domain.
+
+Do not copy any exact text, images, logos, or proprietary layout from another website. Recreate the general style: large industrial hero image, strong corporate headline, simple navigation, service cards, project/capability sections, and a professional contact area.
+
+---
+
+## Design Direction
+
+### Overall Style
+
+* Professional Canadian industrial / mining company look.
+* Clean, modern, corporate, trustworthy.
+* Not too flashy; prioritize credibility and clarity.
+* Use large high-quality industrial imagery: mining site, metal fabrication, steel, equipment, engineers, warehouse, logistics, or processing facilities.
+* Use dark navy, charcoal, steel gray, white, and one accent color such as copper, gold, or industrial orange.
+
+### Visual Keywords
+
+* Mining services
+* Metal technology
+* Industrial solutions
+* Engineering
+* Manufacturing
+* Procurement
+* Reliable supply chain
+* Safety and quality
+* Project execution
+
+### Suggested Color Palette
+
+* Background dark: `#0F172A` or `#111827`
+* Main text dark: `#1F2937`
+* Light background: `#F8FAFC`
+* Steel gray: `#64748B`
+* Accent gold/copper: `#C99700` or `#B87333`
+* White: `#FFFFFF`
+
+### Typography
+
+* Use a modern sans-serif font.
+* Suggested: Inter, Satoshi, Manrope, or similar.
+* Headings should be bold, spacious, and corporate.
+* Body text should be readable and not too small.
+
+---
+
+## Website Structure
+
+Build a single-page website with optional future multi-page routing.
+
+### Header / Navigation
+
+Sticky or top-fixed header.
+
+Left:
+
+* Company logo placeholder: `LL Metal Tech`
+
+Right navigation:
+
+* Home
+* About
+* Services
+* Capabilities
+* Projects
+* Sustainability
+* Contact
+
+CTA button:
+
+* `Request a Quote`
+
+Header behavior:
+
+* Transparent over hero section on desktop.
+* Becomes white or dark solid background when scrolling.
+* Mobile menu should collapse into a hamburger menu.
+
+---
+
+## Section 1: Hero
+
+### Purpose
+
+Immediately communicate that the company is a reliable metals / mining / industrial partner.
+
+### Layout
+
+Full-screen or large hero section with background image or video-style image overlay.
+
+### Hero Content
+
+Headline:
+`Reliable Metal & Industrial Solutions for Mining, Construction, and Manufacturing`
+
+Subheadline:
+`LL Metal Tech provides dependable sourcing, processing, fabrication, and project support for industrial clients across North America and global markets.`
+
+Primary button:
+`Explore Our Capabilities`
+
+Secondary button:
+`Contact Us`
+
+### Visual Style
+
+* Dark overlay over industrial image.
+* Large bold white headline.
+* Accent line or small badge above headline.
+
+Small badge example:
+`Metal Supply • Fabrication • Industrial Support`
+
+---
+
+## Section 2: Company Snapshot / Trust Bar
+
+Create a horizontal trust bar below the hero.
+
+Suggested items:
+
+* `Industrial Metal Solutions`
+* `Mining & Construction Support`
+* `Quality-Focused Operations`
+* `Local Service, Global Standards`
+
+Use icons if available.
+
+---
+
+## Section 3: About Us
+
+### Heading
+
+`Built for Industrial Reliability`
+
+### Body Text
+
+`LL Metal Tech is a metals and industrial solutions company supporting clients in mining, construction, manufacturing, and infrastructure. We help customers source, process, and deliver the materials and services needed to move projects forward with confidence.`
+
+### Supporting Text
+
+`Our approach combines responsive service, technical understanding, and a commitment to quality, safety, and long-term partnerships.`
+
+### Layout
+
+Two-column layout:
+
+* Left: text and CTA
+* Right: image card or statistics panel
+
+### Optional Stats
+
+* `Reliable supply chain support`
+* `Custom metal solutions`
+* `Industrial project experience`
+* `Responsive client service`
+
+Avoid fake numbers unless the client provides real data.
+
+---
+
+## Section 4: Services
+
+### Heading
+
+`Our Services`
+
+### Subtitle
+
+`Practical solutions for companies that need dependable materials, fabrication, and industrial support.`
+
+Create 4 to 6 service cards.
+
+#### Card 1: Metal Supply
+
+Description:
+`Sourcing and supply of steel, stainless steel, aluminum, copper, and specialty materials for industrial applications.`
+
+#### Card 2: Custom Fabrication
+
+Description:
+`Support for custom parts, structural components, welding, cutting, and fabrication based on project requirements.`
+
+#### Card 3: Mining & Industrial Support
+
+Description:
+`Material and equipment support for mining, construction, and heavy industrial operations.`
+
+#### Card 4: Processing & Finishing
+
+Description:
+`Processing, preparation, and finishing support to help materials meet technical and operational needs.`
+
+#### Card 5: Logistics Coordination
+
+Description:
+`Coordinated delivery and supply chain support to reduce delays and keep projects moving.`
+
+#### Card 6: Project-Based Solutions
+
+Description:
+`Flexible support for one-time orders, recurring supply needs, and custom industrial projects.`
+
+### Style
+
+* Cards with subtle shadows.
+* Hover effect.
+* Industrial icons.
+* Accent color on card top border or icon.
+
+---
+
+## Section 5: Capabilities / Expertise
+
+### Heading
+
+`Capabilities Across the Industrial Lifecycle`
+
+### Layout
+
+Use a grid or timeline style.
+
+Capability items:
+
+1. `Material Sourcing`
+2. `Technical Consultation`
+3. `Fabrication & Processing`
+4. `Quality Control`
+5. `Packaging & Delivery`
+6. `After-Sales Support`
+
+### Text
+
+`From early material planning to final delivery, LL Metal Tech helps clients simplify procurement and reduce operational friction.`
+
+---
+
+## Section 6: Industries Served
+
+### Heading
+
+`Industries We Serve`
+
+Create cards or image tiles for:
+
+* Mining
+* Metal Fabrication
+* Construction
+* Infrastructure
+* Manufacturing
+* Energy & Utilities
+
+Each tile should have a short one-line explanation.
+
+Example:
+`Mining — Durable materials and industrial support for demanding operating environments.`
+
+---
+
+## Section 7: Projects / Gallery
+
+### Heading
+
+`Project & Material Gallery`
+
+### Purpose
+
+Build trust with visuals. If real project photos are not available yet, use high-quality placeholder industrial images and make the component easy to replace later.
+
+### Layout
+
+* 3-column image grid on desktop.
+* 1-column on mobile.
+
+Image categories:
+
+* Metal inventory
+* Fabricated components
+* Industrial warehouse
+* Mining site support
+* Logistics / delivery
+* Quality inspection
+
+Each image card should include:
+
+* Title
+* Short caption
+
+Example card:
+Title: `Custom Steel Components`
+Caption: `Processed and prepared for industrial project requirements.`
+
+---
+
+## Section 8: Sustainability / Safety / Quality
+
+### Heading
+
+`Committed to Quality, Safety, and Responsible Operations`
+
+### Content
+
+`We understand that industrial projects depend on reliable materials, safe practices, and responsible execution. Our team works with clients and partners to support quality-focused, efficient, and accountable operations.`
+
+Three pillars:
+
+1. `Quality Assurance`
+
+   * `Material consistency, documentation, and client-focused standards.`
+2. `Safety Mindset`
+
+   * `Responsible practices across handling, processing, and delivery.`
+3. `Responsible Partnerships`
+
+   * `Long-term relationships built on transparency and reliability.`
+
+---
+
+## Section 9: CTA Banner
+
+### Heading
+
+`Need a Reliable Metal or Industrial Supply Partner?`
+
+### Text
+
+`Tell us what you need, and our team will help you find the right solution.`
+
+Button:
+`Request a Quote`
+
+Style:
+
+* Dark background.
+* Accent button.
+* Industrial background image with overlay.
+
+---
+
+## Section 10: Contact
+
+### Heading
+
+`Contact LL Metal Tech`
+
+### Form Fields
+
+* Name
+* Company
+* Email
+* Phone
+* Service Needed
+* Message
+
+### Contact Info Placeholders
+
+* Email: `info@llmetaltech.com`
+* Phone: `+1 (XXX) XXX-XXXX`
+* Location: `Canada / North America`
+
+### Optional
+
+* Add embedded Google Map placeholder.
+* Add WeChat / WhatsApp contact placeholder if the client wants international communication.
+
+---
+
+## Footer
+
+Footer columns:
+
+### Company
+
+* LL Metal Tech
+* Short description: `Reliable metal and industrial solutions for mining, construction, and manufacturing clients.`
+
+### Quick Links
+
+* About
+* Services
+* Capabilities
+* Projects
+* Contact
+
+### Contact
+
+* Email
+* Phone
+* Address placeholder
+
+### Legal
+
+* Privacy Policy
+* Terms of Use
+
+Footer bottom:
+`© 2026 LL Metal Tech. All rights reserved.`
+
+---
+
+## Technical Requirements
+
+### Recommended Stack
+
+Use one of the following:
+
+Option A:
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion for subtle animations
+
+Option B:
+
+* Vite
+* React
+* TypeScript
+* Tailwind CSS
+
+For free and stable deployment, prefer:
+
+* Vercel
+* Netlify
+* Cloudflare Pages
+
+### Components to Build
+
+* `Header`
+* `HeroSection`
+* `TrustBar`
+* `AboutSection`
+* `ServicesSection`
+* `CapabilitiesSection`
+* `IndustriesSection`
+* `GallerySection`
+* `QualitySafetySection`
+* `CtaBanner`
+* `ContactSection`
+* `Footer`
+
+### UX Requirements
+
+* Fully responsive design.
+* Desktop, tablet, and mobile optimized.
+* Smooth scrolling navigation.
+* Contact form should be visually complete, even if backend submission is added later.
+* Use semantic HTML.
+* Optimize images.
+* Good contrast and accessibility.
+* Buttons should have hover/focus states.
+* Navigation links should scroll to sections.
+
+### Animation Requirements
+
+Use subtle animations only:
+
+* Fade-in sections on scroll.
+* Slight card lift on hover.
+* Smooth hero text entrance.
+* No excessive motion.
+
+### SEO Requirements
+
+Add metadata:
+
+* Title: `LL Metal Tech | Metal & Industrial Solutions`
+* Description: `LL Metal Tech provides reliable metal supply, fabrication, and industrial support for mining, construction, and manufacturing clients.`
+* Open Graph title and description.
+* Use proper H1, H2, H3 hierarchy.
+
+### Performance Requirements
+
+* Avoid heavy animation libraries unless needed.
+* Use compressed images.
+* Lazy-load gallery images.
+* Keep Lighthouse performance high.
+
+---
+
+## Image Guidance
+
+Use placeholder images from legal sources such as:
+
+* Unsplash
+* Pexels
+* Client-provided photos
+* Licensed stock images
+
+Suggested image themes:
+
+* Steel coils
+* Industrial warehouse
+* Metal fabrication
+* Welding
+* Mining equipment
+* Heavy machinery
+* Engineers with hard hats
+* Industrial logistics
+
+Do not scrape or reuse images from competitor websites.
+
+---
+
+## Suggested Homepage Copy
+
+### Hero
+
+`Reliable Metal & Industrial Solutions for Demanding Projects`
+
+`From material sourcing to fabrication and delivery, LL Metal Tech helps industrial clients move faster with dependable support and quality-focused execution.`
+
+### About
+
+`We support companies across mining, construction, manufacturing, and infrastructure with practical metal and industrial solutions. Whether the need is standard material supply, custom fabrication, or project-based coordination, our goal is to deliver reliable service and long-term value.`
+
+### Services Intro
+
+`Our services are designed to simplify procurement, reduce project delays, and support demanding industrial environments.`
+
+### CTA
+
+`Let’s discuss your material or project requirements.`
+
+---
+
+## Final Instruction to Codex
+
+Create the full website based on this brief. Use clean, production-quality code. Prioritize a polished industrial corporate design, responsive layout, reusable components, and easy content replacement. Do not include fake certifications, fake client logos, or fake project numbers. Use placeholders where real company information is missing.
