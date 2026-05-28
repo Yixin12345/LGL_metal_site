@@ -14,7 +14,7 @@ export function HeroSection() {
     >
       <Image
         src={homeImages.hero}
-        alt="Industrial heavy-equipment environment representing demanding material supply applications."
+        alt="Rocket launch scene representing aerospace-related advanced manufacturing applications."
         fill
         priority
         quality={85}

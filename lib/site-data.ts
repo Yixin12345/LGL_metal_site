@@ -22,6 +22,8 @@ import picture6 from "@/pdf/Picture6.jpg";
 import picture7 from "@/pdf/Picture7.jpg";
 import picture8 from "@/pdf/Picture8.jpg";
 import picture9 from "@/pdf/Picture9.jpg";
+import cuttingImage from "@/cutting.png";
+import rocketBackground from "@/rocket_background.jpg";
 
 type NavItem = {
   label: string;
@@ -330,6 +332,6 @@ export const qualityPillars: SupportCard[] = [
 ];
 
 export const homeImages = {
-  hero: "https://unsplash.com/photos/7jY0NKqO_eE/download?force=true&w=1800&q=80",
-  about: "https://unsplash.com/photos/6Ips_2SI-qE/download?force=true&w=1200&q=80",
+  hero: rocketBackground,
+  about: cuttingImage,
 };
