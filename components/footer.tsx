@@ -4,14 +4,15 @@ import { navigation, siteConfig } from "@/lib/site-data";
 
 export function Footer() {
   return (
-    <footer className="bg-[var(--brand-navy-strong)] py-14 text-slate-300">
+    <footer className="bg-[#0b1321] py-14 text-slate-300">
       <Container>
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_0.8fr_0.9fr_0.8fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.5fr_0.9fr_0.8fr]">
           <div>
-            <BrandMark invert />
+            <BrandMark size="footer" />
             <p className="mt-6 max-w-sm text-sm leading-7 text-slate-400">
-              Montreal-based supplier focused on hafnium, minor metals, and
-              specialized industrial material requirements.
+              Montreal-based supplier focused on hafnium, tungsten,
+              molybdenum, niobium, and specialized industrial material
+              requirements.
             </p>
           </div>
           <div>
@@ -28,23 +29,6 @@ export function Footer() {
                   {item.label}
                 </a>
               ))}
-            </div>
-          </div>
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
-              Contact
-            </h3>
-            <div className="mt-5 space-y-3 text-sm text-slate-400">
-              <a href={`mailto:${siteConfig.email}`} className="block hover:text-white">
-                {siteConfig.email}
-              </a>
-              <a
-                href={`tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`}
-                className="block hover:text-white"
-              >
-                {siteConfig.phone}
-              </a>
-              <p>{siteConfig.location}</p>
             </div>
           </div>
           <div>

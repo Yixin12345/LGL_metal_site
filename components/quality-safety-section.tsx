@@ -6,16 +6,16 @@ import { qualityPillars } from "@/lib/site-data";
 export function QualitySafetySection() {
   return (
     <section
-      id="sustainability"
-      className="relative overflow-hidden bg-[var(--color-background)] py-24 sm:py-28"
+      id="quality"
+      className="relative overflow-hidden bg-white py-24 sm:py-28"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(184,115,51,0.08),transparent_24%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(184,115,51,0.05),transparent_24%)]" />
       <Container className="relative">
         <Reveal>
           <SectionHeading
-            eyebrow="Quality & Safety"
-            title="Commercial Discipline for Sensitive and High-Value Materials"
-            description="Specialty metals demand more than availability alone. We focus on clear specifications, practical coordination, and reliable commercial follow-up to support better purchasing decisions."
+            eyebrow="Quality & Execution"
+            title="What Protects Buyer Confidence on Specialty-Metal Orders"
+            description="The website now speaks more directly to real purchasing concerns: application fit, clarity on form and grade, disciplined packaging, and responsive communication once an order is moving."
             align="center"
           />
         </Reveal>
@@ -25,7 +25,8 @@ export function QualitySafetySection() {
 
             return (
               <Reveal key={pillar.title} delay={index * 70}>
-                <article className="h-full rounded-[1.8rem] border border-slate-200 bg-white p-7 shadow-[0_18px_50px_rgba(15,23,42,0.06)]">
+                <article className="h-full rounded-[1.7rem] border border-slate-200 bg-[#fcfdff] p-7 shadow-[0_18px_45px_rgba(15,23,42,0.05)]">
+                  <div className="mb-6 h-1 w-14 rounded-full bg-[var(--brand-copper)]" />
                   <span className="flex h-13 w-13 items-center justify-center rounded-2xl bg-[rgba(184,115,51,0.12)] text-[var(--brand-copper)]">
                     <Icon className="size-6" />
                   </span>
@@ -40,6 +41,18 @@ export function QualitySafetySection() {
             );
           })}
         </div>
+        <Reveal delay={140}>
+          <div className="mt-10 rounded-[1.8rem] border border-slate-200 bg-[#fcfdff] px-7 py-7 shadow-[0_18px_45px_rgba(15,23,42,0.05)] sm:px-8">
+            <p className="text-sm leading-8 text-slate-600 sm:text-base">
+              LL Metal Tech is positioned to support buyers that need clear
+              communication around specialty metals rather than generic
+              catalog-only sales language. That is especially important when
+              the metal, form, or application has a direct impact on process
+              performance, consumable life, alloy behavior, or downstream
+              manufacturing results.
+            </p>
+          </div>
+        </Reveal>
       </Container>
     </section>
   );

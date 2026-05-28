@@ -22,18 +22,23 @@ export function SectionHeading({
     >
       <div
         className={cn(
-          "mb-4 inline-flex items-center gap-3 rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em]",
+          "mb-5 inline-flex items-center gap-3 text-[0.72rem] font-semibold uppercase tracking-[0.28em]",
           invert
-            ? "border-white/12 bg-white/6 text-white/70"
-            : "border-slate-200 bg-white text-[var(--brand-copper)] shadow-sm",
+            ? "text-slate-300"
+            : "text-[var(--brand-copper)]",
         )}
       >
-        <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand-copper)]" />
+        <span
+          className={cn(
+            "h-px w-10",
+            invert ? "bg-white/35" : "bg-[var(--brand-copper)]",
+          )}
+        />
         {eyebrow}
       </div>
       <h2
         className={cn(
-          "text-balance text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl",
+          "text-balance text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-[3.05rem]",
           invert ? "text-white" : "text-slate-900",
         )}
       >
@@ -41,7 +46,8 @@ export function SectionHeading({
       </h2>
       <p
         className={cn(
-          "mt-5 text-base leading-8 sm:text-lg",
+          "mt-6 max-w-2xl text-base leading-8 sm:text-lg",
+          align === "center" && "mx-auto",
           invert ? "text-slate-300" : "text-slate-600",
         )}
       >

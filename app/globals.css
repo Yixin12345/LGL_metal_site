@@ -28,7 +28,9 @@ html {
 
 body {
   min-height: 100vh;
-  background: var(--color-background);
+  background:
+    radial-gradient(circle at top left, rgba(184, 115, 51, 0.06), transparent 18%),
+    linear-gradient(180deg, #f7fafc 0%, #f8fafc 100%);
   color: var(--color-foreground);
 }
 
