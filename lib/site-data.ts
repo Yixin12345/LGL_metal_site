@@ -9,19 +9,24 @@ import {
   ShieldCheckIcon,
   TruckIcon,
 } from "@/components/icons";
-import hfImage from "@/products_pic/hf.png";
-import moImage from "@/products_pic/mo.png";
-import nbImage from "@/products_pic/nb.png";
-import wImage from "@/products_pic/w.png";
-import picture1 from "@/pdf/Picture1.jpg";
-import picture2 from "@/pdf/Picture2.png";
-import picture3 from "@/pdf/Picture3.png";
-import picture4 from "@/pdf/Picture4.png";
-import picture5 from "@/pdf/Picture5.jpg";
-import picture6 from "@/pdf/Picture6.jpg";
-import picture7 from "@/pdf/Picture7.jpg";
-import picture8 from "@/pdf/Picture8.jpg";
-import picture9 from "@/pdf/Picture9.jpg";
+import hfImage from "@/hafnium/hf.png";
+import hfElectrodeProduction from "@/hafnium/electrode-production.png";
+import hfPrecisionInspection from "@/hafnium/precision-inspection.png";
+import hfWireCoil from "@/hafnium/wire-coil.jpg";
+import hfWireDetail from "@/hafnium/wire-detail.png";
+import moImage from "@/molybdenum/mo.png";
+import moBarStock from "@/molybdenum/bar-stock.jpg";
+import moCurvedStock from "@/molybdenum/curved-stock.jpg";
+import moStraightRods from "@/molybdenum/straight-rods.jpg";
+import nbImage from "@/niobium/nb.png";
+import nbBulkRods from "@/niobium/bulk-rods.jpg";
+import nbPrecisionInspection from "@/niobium/precision-inspection.png";
+import nbRodEnds from "@/niobium/rod-ends.jpg";
+import wImage from "@/tungsten/w.png";
+import wBarStock from "@/tungsten/bar-stock.jpg";
+import wBulkRods from "@/tungsten/bulk-rods.jpg";
+import wRodEnds from "@/tungsten/rod-ends.jpg";
+import wStraightRods from "@/tungsten/straight-rods.jpg";
 import cuttingImage from "@/cutting.png";
 import rocketBackground from "@/rocket_background.jpg";
 
@@ -30,13 +35,20 @@ type NavItem = {
   href: string;
 };
 
-type ProductMetal = {
+export type ProductMetal = {
   name: string;
+  slug: string;
   symbol: string;
   kicker: string;
   description: string;
   highlights: string[];
   image: StaticImageData;
+  gallery: ProductGalleryItem[];
+  forms: string[];
+  generalInfo: {
+    label: string;
+    value: string;
+  }[];
 };
 
 type ApplicationInsight = {
@@ -46,7 +58,7 @@ type ApplicationInsight = {
   details: string[];
 };
 
-type ProductGalleryItem = {
+export type ProductGalleryItem = {
   title: string;
   caption: string;
   image: StaticImageData;
@@ -70,8 +82,9 @@ export const siteConfig = {
   tagline: "Specialty metals and industrial materials",
   url: "https://www.llmetaltech.com",
   email: "info@llmetaltech.com",
-  phone: "+1 (438) 926-1018",
-  location: "Montreal, Quebec, Canada",
+  phone: "+1 (514) 665-6397",
+  phoneHref: "tel:+15146656397",
+  location: "Montreal, Canada",
   description:
     "LL Metal Tech is a Montreal-based supplier of hafnium, tungsten, molybdenum, niobium, and specialized industrial materials for plasma cutting, alloying, and high-temperature manufacturing applications.",
 };
@@ -80,7 +93,6 @@ export const navigation: NavItem[] = [
   { label: "Home", href: "/#home" },
   { label: "About", href: "/#about" },
   { label: "Metals", href: "/#products" },
-  { label: "Gallery", href: "/#gallery" },
   { label: "Supply", href: "/#supply" },
   { label: "Quality", href: "/#quality" },
 ];
@@ -101,6 +113,7 @@ export const aboutPoints = [
 export const productMetals: ProductMetal[] = [
   {
     name: "Hafnium",
+    slug: "hafnium",
     symbol: "Hf",
     kicker: "Plasma cutting performance",
     description:
@@ -111,9 +124,28 @@ export const productMetals: ProductMetal[] = [
       "Useful for repeat replacement programs",
     ],
     image: hfImage,
+    gallery: [
+      { title: "Hafnium Product Overview", caption: "Primary hafnium product visual for buyer review.", image: hfImage },
+      { title: "Hafnium Wire Coil", caption: "Wire-form material image from the LL Metal material file set.", image: hfWireCoil },
+      { title: "Hafnium Wire Detail", caption: "Close-up view showing wire form and surface finish.", image: hfWireDetail },
+      { title: "Electrode Production", caption: "Production process view related to electrode applications.", image: hfElectrodeProduction },
+      { title: "Precision Inspection", caption: "Measured component inspection during production workflow.", image: hfPrecisionInspection },
+    ],
+    forms: [
+      "Wire and coil programs",
+      "Electrode-related material support",
+      "Application-specific form and purity review",
+    ],
+    generalInfo: [
+      { label: "Chemical Symbol", value: "Hf" },
+      { label: "Atomic No.", value: "72" },
+      { label: "Primary Focus", value: "Plasma cutting electrodes" },
+      { label: "Supply Position", value: "Specialty industrial demand" },
+    ],
   },
   {
     name: "Tungsten",
+    slug: "tungsten",
     symbol: "W",
     kicker: "Bars, refractory demand, alloy feed",
     description:
@@ -124,9 +156,29 @@ export const productMetals: ProductMetal[] = [
       "TW-1, TW-2, and TW-4 related discussions",
     ],
     image: wImage,
+    gallery: [
+      { title: "Tungsten Product Overview", caption: "Primary tungsten product visual for refractory-metal discussions.", image: wImage },
+      { title: "Bar Stock", caption: "Square or rectangular stock form for supply discussions.", image: wBarStock },
+      { title: "Bulk Rods", caption: "Packed rod inventory prepared for industrial material handling.", image: wBulkRods },
+      { title: "Rod Ends", caption: "Closer view of machined or cut rod inventory in storage.", image: wRodEnds },
+      { title: "Straight Rod Set", caption: "Clean straight stock presentation for product review.", image: wStraightRods },
+    ],
+    forms: [
+      "Round bars",
+      "Square bars",
+      "Powder-metallurgy based material routes",
+      "Alloy-feed sourcing discussions",
+    ],
+    generalInfo: [
+      { label: "Chemical Symbol", value: "W" },
+      { label: "Atomic No.", value: "74" },
+      { label: "Material Profile", value: "Dense refractory metal" },
+      { label: "Common Need", value: "Heat resistance and alloy feed" },
+    ],
   },
   {
     name: "Molybdenum",
+    slug: "molybdenum",
     symbol: "Mo",
     kicker: "High-temperature and electronics use",
     description:
@@ -137,9 +189,28 @@ export const productMetals: ProductMetal[] = [
       "Useful where easier machining than tungsten matters",
     ],
     image: moImage,
+    gallery: [
+      { title: "Molybdenum Product Overview", caption: "Primary molybdenum product visual for high-temperature applications.", image: moImage },
+      { title: "Curved Stock", caption: "Processed material form shown in bundled supply condition.", image: moCurvedStock },
+      { title: "Bar Stock", caption: "Stock form relevant to refractory-metal supply review.", image: moBarStock },
+      { title: "Straight Rod Set", caption: "Straight stock presentation for industrial buyer review.", image: moStraightRods },
+    ],
+    forms: [
+      "Bars and stock programs",
+      "Heating electrode discussions",
+      "Sputtering and electronics-related material review",
+      "High-temperature furnace and tooling support",
+    ],
+    generalInfo: [
+      { label: "Chemical Symbol", value: "Mo" },
+      { label: "Atomic No.", value: "42" },
+      { label: "Material Profile", value: "High-temperature refractory metal" },
+      { label: "Common Need", value: "Conductivity and low thermal expansion" },
+    ],
   },
   {
     name: "Niobium",
+    slug: "niobium",
     symbol: "Nb",
     kicker: "Specialty alloying and performance metallurgy",
     description:
@@ -150,6 +221,23 @@ export const productMetals: ProductMetal[] = [
       "Relevant to energy, industrial, and engineered products",
     ],
     image: nbImage,
+    gallery: [
+      { title: "Niobium Product Overview", caption: "Primary niobium product visual for alloying and engineered material use.", image: nbImage },
+      { title: "Bulk Rods", caption: "Packed rod inventory prepared for industrial material handling.", image: nbBulkRods },
+      { title: "Rod Ends", caption: "Closer view of cut or machined rod inventory.", image: nbRodEnds },
+      { title: "Precision Inspection", caption: "Measured component inspection during production workflow.", image: nbPrecisionInspection },
+    ],
+    forms: [
+      "Alloy-addition material programs",
+      "Specialty input sourcing discussions",
+      "Engineered-material and performance metallurgy review",
+    ],
+    generalInfo: [
+      { label: "Chemical Symbol", value: "Nb" },
+      { label: "Atomic No.", value: "41" },
+      { label: "Material Profile", value: "Specialty alloying input" },
+      { label: "Common Need", value: "Strength and temperature capability" },
+    ],
   },
 ];
 
@@ -197,54 +285,6 @@ export const applicationInsights: ApplicationInsight[] = [
       "Relevant to energy, transportation, and advanced manufacturing",
       "A strong fit for buyers needing performance-oriented metal inputs",
     ],
-  },
-];
-
-export const productGallery: ProductGalleryItem[] = [
-  {
-    title: "Hafnium Wire Coil",
-    caption: "Real product photo from the LL Metal material file set.",
-    image: picture1,
-  },
-  {
-    title: "Hafnium Wire Detail",
-    caption: "Close-up product image showing wire form and surface finish.",
-    image: picture2,
-  },
-  {
-    title: "Electrode Production",
-    caption: "Manufacturing process view supporting electrode-related applications.",
-    image: picture3,
-  },
-  {
-    title: "Precision Inspection",
-    caption: "Measured component inspection during production workflow.",
-    image: picture4,
-  },
-  {
-    title: "Bar Stock",
-    caption: "Square or rectangular stock form for refractory-metal supply discussions.",
-    image: picture5,
-  },
-  {
-    title: "Curved Stock",
-    caption: "Processed material form shown in bundled supply condition.",
-    image: picture6,
-  },
-  {
-    title: "Bulk Rods",
-    caption: "Packed rod inventory prepared for industrial material handling.",
-    image: picture7,
-  },
-  {
-    title: "Rod Ends",
-    caption: "Closer view of machined or cut rod inventory in storage.",
-    image: picture8,
-  },
-  {
-    title: "Straight Rod Set",
-    caption: "Clean straight stock presentation for product image display.",
-    image: picture9,
   },
 ];
 
