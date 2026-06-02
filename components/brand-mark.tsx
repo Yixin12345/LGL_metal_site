@@ -21,10 +21,8 @@ export function BrandMark({
     >
       <span
         className={cn(
-          "flex shrink-0 items-center justify-center rounded-[1.15rem] border shadow-[0_14px_30px_rgba(15,23,42,0.08)]",
-          isFooter
-            ? "border-white/10 bg-white/95 p-2.5"
-            : "border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#edf2f7_100%)] p-2.5",
+          "flex shrink-0 items-center justify-center",
+          isFooter ? "h-[52px] w-[52px]" : "h-[58px] w-[58px] sm:h-[62px] sm:w-[62px]",
         )}
       >
         <Image
@@ -34,7 +32,7 @@ export function BrandMark({
           sizes="64px"
           className={cn(
             "h-auto w-auto select-none",
-            isFooter ? "max-h-[42px] max-w-[42px]" : "max-h-[46px] max-w-[46px] sm:max-h-[50px] sm:max-w-[50px]",
+            isFooter ? "max-h-[52px] max-w-[52px]" : "max-h-[58px] max-w-[58px] sm:max-h-[62px] sm:max-w-[62px]",
           )}
         />
       </span>
