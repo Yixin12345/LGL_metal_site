@@ -10,9 +10,9 @@ import {
   TruckIcon,
 } from "@/components/icons";
 import hfImage from "@/P_hafnium/hf.png";
-import hfCrystalBars from "@/P_hafnium/Crystal bars.png";
-import hfCrystalScraps from "@/P_hafnium/Crystal_scraps.png";
-import hfEbmIngot from "@/P_hafnium/EBM ingot.png";
+import hfCrystalBars from "@/P_hafnium/Crystal bars Zr0.2.jpg";
+import hfCrystalScraps from "@/P_hafnium/Crystal scraps.jpg";
+import hfEbmIngot from "@/P_hafnium/EBM ingot —5N、Fe 6ppm、Zr 760ppm.jpg";
 import hfWire from "@/P_hafnium/Hafnium wire(Various sizes).png";
 import moImage from "@/P_molybdenum/mo.png";
 import moBarStock from "@/P_molybdenum/bar-stock.jpg";
