@@ -30,7 +30,7 @@ export function AboutSection() {
             </p>
             <div className="mt-10">
               <LinkButton
-                href="/#applications"
+                href="/metals"
                 variant="secondary"
                 icon={<ArrowRightIcon className="size-4" />}
               >

@@ -15,7 +15,7 @@ export function BrandMark({
 
   return (
     <Link
-      href="/#home"
+      href="/"
       className="inline-flex shrink-0 items-center gap-3 sm:gap-4"
       aria-label="LGL Metal home"
     >

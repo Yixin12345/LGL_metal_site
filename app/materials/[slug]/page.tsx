@@ -60,7 +60,7 @@ export default async function MaterialPage({ params }: PageProps) {
           <Container>
             <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
               <Link
-                href="/#products"
+                href="/metals"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-slate-950"
               >
                 <ArrowRightIcon className="size-4 rotate-180" />

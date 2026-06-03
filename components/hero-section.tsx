@@ -41,7 +41,7 @@ export function HeroSection() {
               to shipment.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <LinkButton href="/#products">Explore Core Metals</LinkButton>
+              <LinkButton href="/metals">Explore Core Metals</LinkButton>
               <p className="text-sm leading-7 text-slate-300">
                 Montreal-based supply coordination for North American and international buyers.
               </p>

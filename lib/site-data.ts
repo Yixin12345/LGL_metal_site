@@ -13,6 +13,7 @@ import hfImage from "@/P_hafnium/hf.png";
 import hfCrystalBars from "@/P_hafnium/Crystal bars Zr0.2.jpg";
 import hfCrystalScraps from "@/P_hafnium/Crystal scraps.jpg";
 import hfEbmIngot from "@/P_hafnium/EBM ingot —5N、Fe 6ppm、Zr 760ppm.jpg";
+import hfTarget from "@/P_hafnium/hafnium target.jpg";
 import hfWire from "@/P_hafnium/Hafnium wire(Various sizes).png";
 import moImage from "@/P_molybdenum/mo.png";
 import moBarStock from "@/P_molybdenum/bar-stock.jpg";
@@ -88,11 +89,11 @@ export const siteConfig = {
 };
 
 export const navigation: NavItem[] = [
-  { label: "Home", href: "/#home" },
-  { label: "About", href: "/#about" },
-  { label: "Metals", href: "/#products" },
-  { label: "Supply", href: "/#supply" },
-  { label: "Quality", href: "/#quality" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Metals", href: "/metals" },
+  { label: "Supply", href: "/supply" },
+  { label: "Quality", href: "/quality" },
 ];
 
 export const heroHighlights = [
@@ -125,10 +126,11 @@ export const productMetals: ProductMetal[] = [
     image: hfImage,
     gallery: [
       { title: "Hafnium Product Overview", caption: "Primary hafnium product visual for buyer review.", image: hfImage },
-      { title: "Crystal bars", caption: "Zr<0.2% Hf>99.5%", image: hfCrystalBars },
-      { title: "Crystal bar pieces", caption: "Zr<0.2% Hf>99.5%", image: hfCrystalScraps },
+      { title: "Crystal bars", caption: "Hf+Zr>99.95%  Zr<0.2%", image: hfCrystalBars },
+      { title: "Crystal bar pieces", caption: "Hf+Zr>99.95%  Zr<0.2%", image: hfCrystalScraps },
       { title: "EBM ingot", caption: "5N, Fe 6ppm, Zr 760ppm", image: hfEbmIngot },
       { title: "Hafnium wire", caption: "Various sizes", image: hfWire },
+      { title: "Hafnium target", caption: "", image: hfTarget },
     ],
     forms: [
       "Crystal bar",
