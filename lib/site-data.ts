@@ -80,7 +80,7 @@ export const siteConfig = {
   legalName: "LGL Metal",
   tagline: "Specialty metals and industrial materials",
   url: "https://www.lglmetal.com",
-  email: "info@llmetaltech.com",
+  email: "info@lglmetal.com",
   phone: "+1 (514) 665-6397",
   phoneHref: "tel:+15146656397",
   location: "Montreal, Canada",

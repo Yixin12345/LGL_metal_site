@@ -4,9 +4,9 @@
 
 Create a professional mining / metals / industrial company website inspired by modern Canadian mining-service websites. The site should feel credible, clean, corporate, and practical. It should work as a company profile / business-card website for a metals or mining-related business.
 
-Primary domain target: `www.llmetaltech.com`
+Primary domain target: `www.lglmetal.com`
 
-Secondary domain: `www.lglmetal.com` can redirect to the primary domain.
+No secondary company-domain redirect is configured.
 
 Do not copy any exact text, images, logos, or proprietary layout from another website. Recreate the general style: large industrial hero image, strong corporate headline, simple navigation, service cards, project/capability sections, and a professional contact area.
 
@@ -62,7 +62,7 @@ Sticky or top-fixed header.
 
 Left:
 
-* Company logo placeholder: `LL Metal Tech`
+* Company logo placeholder: `LGL Metal`
 
 Right navigation:
 
@@ -102,7 +102,7 @@ Headline:
 `Reliable Metal & Industrial Solutions for Mining, Construction, and Manufacturing`
 
 Subheadline:
-`LL Metal Tech provides dependable sourcing, processing, fabrication, and project support for industrial clients across North America and global markets.`
+`LGL Metal provides dependable sourcing, processing, fabrication, and project support for industrial clients across North America and global markets.`
 
 Primary button:
 `Explore Our Capabilities`
@@ -144,7 +144,7 @@ Use icons if available.
 
 ### Body Text
 
-`LL Metal Tech is a metals and industrial solutions company supporting clients in mining, construction, manufacturing, and infrastructure. We help customers source, process, and deliver the materials and services needed to move projects forward with confidence.`
+`LGL Metal is a metals and industrial solutions company supporting clients in mining, construction, manufacturing, and infrastructure. We help customers source, process, and deliver the materials and services needed to move projects forward with confidence.`
 
 ### Supporting Text
 
@@ -240,7 +240,7 @@ Capability items:
 
 ### Text
 
-`From early material planning to final delivery, LL Metal Tech helps clients simplify procurement and reduce operational friction.`
+`From early material planning to final delivery, LGL Metal helps clients simplify procurement and reduce operational friction.`
 
 ---
 
@@ -350,7 +350,7 @@ Style:
 
 ### Heading
 
-`Contact LL Metal Tech`
+`Contact LGL Metal`
 
 ### Form Fields
 
@@ -363,7 +363,7 @@ Style:
 
 ### Contact Info Placeholders
 
-* Email: `info@llmetaltech.com`
+* Email: `info@lglmetal.com`
 * Phone: `+1 (XXX) XXX-XXXX`
 * Location: `Canada / North America`
 
@@ -380,7 +380,7 @@ Footer columns:
 
 ### Company
 
-* LL Metal Tech
+* LGL Metal
 * Short description: `Reliable metal and industrial solutions for mining, construction, and manufacturing clients.`
 
 ### Quick Links
@@ -403,7 +403,7 @@ Footer columns:
 * Terms of Use
 
 Footer bottom:
-`© 2026 LL Metal Tech. All rights reserved.`
+`© 2026 LGL Metal. All rights reserved.`
 
 ---
 
@@ -474,8 +474,8 @@ Use subtle animations only:
 
 Add metadata:
 
-* Title: `LL Metal Tech | Metal & Industrial Solutions`
-* Description: `LL Metal Tech provides reliable metal supply, fabrication, and industrial support for mining, construction, and manufacturing clients.`
+* Title: `LGL Metal | Metal & Industrial Solutions`
+* Description: `LGL Metal provides reliable metal supply, fabrication, and industrial support for mining, construction, and manufacturing clients.`
 * Open Graph title and description.
 * Use proper H1, H2, H3 hierarchy.
 
@@ -518,7 +518,7 @@ Do not scrape or reuse images from competitor websites.
 
 `Reliable Metal & Industrial Solutions for Demanding Projects`
 
-`From material sourcing to fabrication and delivery, LL Metal Tech helps industrial clients move faster with dependable support and quality-focused execution.`
+`From material sourcing to fabrication and delivery, LGL Metal helps industrial clients move faster with dependable support and quality-focused execution.`
 
 ### About
 

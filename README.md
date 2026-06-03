@@ -1,4 +1,4 @@
-# LL Metal Tech Website
+# LGL Metal Website
 
 Single-page industrial company website built with Next.js, TypeScript, and Tailwind CSS, with reusable sections and deployment-ready defaults for Vercel.
 
@@ -26,5 +26,5 @@ npm run build
 ## Notes
 
 - The contact form posts to a local `/api/contact` route that is ready to be replaced with a CRM, email service, or server-side workflow.
-- The secondary domain redirect is handled in `proxy.ts`.
+- `proxy.ts` does not redirect to another company domain.
 - Footer legal links point to placeholder routes that can be replaced with company-approved policy language before launch.
