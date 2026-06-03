@@ -115,8 +115,6 @@ export const productMetals: ProductMetal[] = [
     symbol: "Hf",
     kicker: "Plasma cutting performance",
     description: [
-      "LGL Metal is a specialized supplier focused on selected minor metals, alloys, and high-value metal materials for industrial buyers. We help customers secure hard-to-source inputs with commercial responsiveness and practical coordination.",
-      "Our position in Canada, combined with relationships across qualified producers and processors, allows us to support customers who need purity-conscious supply, reliable communication, and timely movement of material.",
       "Hafnium is a rare refractory metal primarily used in aerospace superalloys, nuclear control rods, plasma cutting electrodes, and semiconductor manufacturing. It has a melting point of approximately 2,233°C and offers excellent high-temperature strength, oxidation resistance, and corrosion resistance.",
     ],
     highlights: [
@@ -128,7 +126,7 @@ export const productMetals: ProductMetal[] = [
     gallery: [
       { title: "Hafnium Product Overview", caption: "Primary hafnium product visual for buyer review.", image: hfImage },
       { title: "Crystal bars", caption: "Zr<0.2% Hf>99.5%", image: hfCrystalBars },
-      { title: "Crystal scraps", caption: "Zr<0.2% Hf>99.5%", image: hfCrystalScraps },
+      { title: "Crystal bar pieces", caption: "Zr<0.2% Hf>99.5%", image: hfCrystalScraps },
       { title: "EBM ingot", caption: "5N, Fe 6ppm, Zr 760ppm", image: hfEbmIngot },
       { title: "Hafnium wire", caption: "Various sizes", image: hfWire },
     ],

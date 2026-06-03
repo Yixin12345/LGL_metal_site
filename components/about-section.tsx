@@ -20,13 +20,13 @@ export function AboutSection() {
             <SectionHeading
               eyebrow="About Us"
               title="A Montreal-based trader and supplier of minor metals"
-              description="LGL Metal is a specialized trader and supplier focused on selected minor metals, alloys, and high-value metal materials for industrial buyers. We help customers secure hard-to-source inputs with commercial responsiveness and practical coordination."
+              description="LGL Metal is a specialized supplier focused on selected minor metals, alloys, and high-value metal materials for industrial buyers. We help customers secure hard-to-source inputs with commercial responsiveness and practical coordination."
             />
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-              Our position in Canada, combined with relationships across qualified
-              producers and processors, allows us to support customers who need
-              purity-conscious supply, reliable communication, and timely
-              movement of material.
+              Our position in Canada, combined with relationships across
+              qualified producers and processors, allows us to support customers
+              who need purity-conscious supply, reliable communication, and
+              timely movement of material.
             </p>
             <div className="mt-10">
               <LinkButton
