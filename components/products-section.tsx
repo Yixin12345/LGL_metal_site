@@ -46,10 +46,7 @@ export function ProductsSection() {
                   <div className="flex min-w-0 flex-1 flex-col p-5 sm:p-6">
                     <div className="flex items-end justify-between gap-4">
                       <div className="min-w-0">
-                        <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[var(--brand-copper)]">
-                          {metal.kicker}
-                        </p>
-                        <h3 className="mt-2 text-[1.55rem] font-bold leading-tight text-slate-900">
+                        <h3 className="text-[1.55rem] font-bold leading-tight text-slate-900">
                           {metal.name}
                         </h3>
                       </div>
@@ -58,7 +55,9 @@ export function ProductsSection() {
                       </span>
                     </div>
                     <p className="mt-4 text-sm leading-6 text-slate-600">
-                      {metal.description}
+                      {Array.isArray(metal.description)
+                        ? metal.description[metal.description.length - 1]
+                        : metal.description}
                     </p>
                     <div className="mt-4 space-y-2 border-t border-slate-200/80 pt-4">
                       {insight.details.slice(0, 2).map((detail) => (

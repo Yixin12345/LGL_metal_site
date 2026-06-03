@@ -44,7 +44,7 @@ export function QualitySafetySection() {
         <Reveal delay={140}>
           <div className="mt-10 rounded-[1.8rem] border border-slate-200 bg-[#fcfdff] px-7 py-7 shadow-[0_18px_45px_rgba(15,23,42,0.05)] sm:px-8">
             <p className="text-sm leading-8 text-slate-600 sm:text-base">
-              LL Metal Tech is positioned to support buyers that need clear
+              LGL Metal is positioned to support buyers that need clear
               communication around specialty metals rather than generic
               catalog-only sales language. That is especially important when
               the metal, form, or application has a direct impact on process

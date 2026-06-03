@@ -9,25 +9,23 @@ import {
   ShieldCheckIcon,
   TruckIcon,
 } from "@/components/icons";
-import hfImage from "@/hafnium/hf.png";
-import hfElectrodeProduction from "@/hafnium/electrode-production.png";
-import hfPrecisionInspection from "@/hafnium/precision-inspection.png";
-import hfWireCoil from "@/hafnium/wire-coil.jpg";
-import hfWireDetail from "@/hafnium/wire-detail.png";
-import moImage from "@/molybdenum/mo.png";
-import moBarStock from "@/molybdenum/bar-stock.jpg";
-import moCurvedStock from "@/molybdenum/curved-stock.jpg";
-import moStraightRods from "@/molybdenum/straight-rods.jpg";
-import nbImage from "@/niobium/nb.png";
-import nbBulkRods from "@/niobium/bulk-rods.jpg";
-import nbPrecisionInspection from "@/niobium/precision-inspection.png";
-import nbRodEnds from "@/niobium/rod-ends.jpg";
-import wImage from "@/tungsten/w.png";
-import wBarStock from "@/tungsten/bar-stock.jpg";
-import wBulkRods from "@/tungsten/bulk-rods.jpg";
-import wRodEnds from "@/tungsten/rod-ends.jpg";
-import wStraightRods from "@/tungsten/straight-rods.jpg";
-import cuttingImage from "@/cutting.png";
+import hfImage from "@/P_hafnium/hf.png";
+import hfCrystalBars from "@/P_hafnium/Crystal bars.png";
+import hfCrystalScraps from "@/P_hafnium/Crystal_scraps.png";
+import hfEbmIngot from "@/P_hafnium/EBM ingot.png";
+import hfWire from "@/P_hafnium/Hafnium wire(Various sizes).png";
+import moImage from "@/P_molybdenum/mo.png";
+import moBarStock from "@/P_molybdenum/bar-stock.jpg";
+import moCurvedStock from "@/P_molybdenum/curved-stock.jpg";
+import moStraightRods from "@/P_molybdenum/straight-rods.jpg";
+import nbImage from "@/P_niobium/nb.png";
+import nbBulkRods from "@/P_niobium/bulk-rods.jpg";
+import nbPrecisionInspection from "@/P_niobium/precision-inspection.png";
+import nbRodEnds from "@/P_niobium/rod-ends.jpg";
+import wImage from "@/P_tungsten/w.png";
+import wBars from "@/P_tungsten/Tungsten bars.png";
+import wScraps from "@/P_tungsten/Tungsten scraps.png";
+import aircraftEngine from "@/aircraft-engine.png";
 import rocketBackground from "@/rocket_background.jpg";
 
 type NavItem = {
@@ -40,7 +38,7 @@ export type ProductMetal = {
   slug: string;
   symbol: string;
   kicker: string;
-  description: string;
+  description: string | string[];
   highlights: string[];
   image: StaticImageData;
   gallery: ProductGalleryItem[];
@@ -77,16 +75,16 @@ type WorkflowStep = {
 };
 
 export const siteConfig = {
-  name: "LL Metal Tech",
-  legalName: "LL Metal Material Technology Co. Ltd.",
+  name: "LGL Metal",
+  legalName: "LGL Metal",
   tagline: "Specialty metals and industrial materials",
-  url: "https://www.llmetaltech.com",
+  url: "https://www.lglmetal.com",
   email: "info@llmetaltech.com",
   phone: "+1 (514) 665-6397",
   phoneHref: "tel:+15146656397",
   location: "Montreal, Canada",
   description:
-    "LL Metal Tech is a Montreal-based supplier of hafnium, tungsten, molybdenum, niobium, and specialized industrial materials for plasma cutting, alloying, and high-temperature manufacturing applications.",
+    "LGL Metal is a Montreal-based trader and supplier of minor metals for alloying and high-temperature manufacturing applications.",
 };
 
 export const navigation: NavItem[] = [
@@ -98,8 +96,8 @@ export const navigation: NavItem[] = [
 ];
 
 export const heroHighlights = [
-  "Hafnium support for plasma cutting electrode programs and replacement-cycle buying",
-  "Tungsten, molybdenum, and niobium positioned for refractory, alloying, and engineered material needs",
+  "Hafnium support for high-temperature nickel-base single crystal alloy programs for aero and industrial gas turbine blades",
+  "Tungsten, molybdenum, niobium, tantalum, and other minor metals positioned for refractory, alloying, and engineered material needs",
   "Montreal-based coordination designed to simplify specification review, sourcing, and delivery follow-up",
 ];
 
@@ -116,8 +114,11 @@ export const productMetals: ProductMetal[] = [
     slug: "hafnium",
     symbol: "Hf",
     kicker: "Plasma cutting performance",
-    description:
-      "Hafnium remains the lead product for electrode-related demand, especially where buyers care about arc stability, consumable performance, and dependable replenishment for plasma cutting operations.",
+    description: [
+      "LGL Metal is a specialized supplier focused on selected minor metals, alloys, and high-value metal materials for industrial buyers. We help customers secure hard-to-source inputs with commercial responsiveness and practical coordination.",
+      "Our position in Canada, combined with relationships across qualified producers and processors, allows us to support customers who need purity-conscious supply, reliable communication, and timely movement of material.",
+      "Hafnium is a rare refractory metal primarily used in aerospace superalloys, nuclear control rods, plasma cutting electrodes, and semiconductor manufacturing. It has a melting point of approximately 2,233°C and offers excellent high-temperature strength, oxidation resistance, and corrosion resistance.",
+    ],
     highlights: [
       "Electrode-focused industrial demand",
       "Purity-conscious commercial coordination",
@@ -126,21 +127,21 @@ export const productMetals: ProductMetal[] = [
     image: hfImage,
     gallery: [
       { title: "Hafnium Product Overview", caption: "Primary hafnium product visual for buyer review.", image: hfImage },
-      { title: "Hafnium Wire Coil", caption: "Wire-form material image from the LL Metal material file set.", image: hfWireCoil },
-      { title: "Hafnium Wire Detail", caption: "Close-up view showing wire form and surface finish.", image: hfWireDetail },
-      { title: "Electrode Production", caption: "Production process view related to electrode applications.", image: hfElectrodeProduction },
-      { title: "Precision Inspection", caption: "Measured component inspection during production workflow.", image: hfPrecisionInspection },
+      { title: "Crystal bars", caption: "Zr<0.2% Hf>99.5%", image: hfCrystalBars },
+      { title: "Crystal scraps", caption: "Zr<0.2% Hf>99.5%", image: hfCrystalScraps },
+      { title: "EBM ingot", caption: "5N, Fe 6ppm, Zr 760ppm", image: hfEbmIngot },
+      { title: "Hafnium wire", caption: "Various sizes", image: hfWire },
     ],
     forms: [
-      "Wire and coil programs",
-      "Electrode-related material support",
-      "Application-specific form and purity review",
+      "Crystal bar",
+      "EB melted ingot",
+      "Wires",
     ],
     generalInfo: [
       { label: "Chemical Symbol", value: "Hf" },
       { label: "Atomic No.", value: "72" },
-      { label: "Primary Focus", value: "Plasma cutting electrodes" },
-      { label: "Supply Position", value: "Specialty industrial demand" },
+      { label: "Atomic Weight", value: "178.49" },
+      { label: "Density g/cm3", value: "13.3" },
     ],
   },
   {
@@ -149,7 +150,7 @@ export const productMetals: ProductMetal[] = [
     symbol: "W",
     kicker: "Bars, refractory demand, alloy feed",
     description:
-      "Tungsten is positioned for buyers that need a dense, heat-resistant refractory metal in bar formats, processed-material programs, or alloy-oriented sourcing discussions.",
+      "Tungsten (W) is a high-density refractory metal with a melting point of 3,422°C. It is widely used in aerospace, defense, electronics, tooling, mining, and high-temperature industrial applications due to its outstanding heat resistance, strength, and durability.",
     highlights: [
       "Round and square bar programs",
       "Powder-metallurgy based material routes",
@@ -158,22 +159,18 @@ export const productMetals: ProductMetal[] = [
     image: wImage,
     gallery: [
       { title: "Tungsten Product Overview", caption: "Primary tungsten product visual for refractory-metal discussions.", image: wImage },
-      { title: "Bar Stock", caption: "Square or rectangular stock form for supply discussions.", image: wBarStock },
-      { title: "Bulk Rods", caption: "Packed rod inventory prepared for industrial material handling.", image: wBulkRods },
-      { title: "Rod Ends", caption: "Closer view of machined or cut rod inventory in storage.", image: wRodEnds },
-      { title: "Straight Rod Set", caption: "Clean straight stock presentation for product review.", image: wStraightRods },
+      { title: "Tungsten bars", caption: "", image: wBars },
+      { title: "Tungsten scraps", caption: "", image: wScraps },
     ],
     forms: [
-      "Round bars",
-      "Square bars",
-      "Powder-metallurgy based material routes",
-      "Alloy-feed sourcing discussions",
+      "Tungsten bars",
+      "Tungsten scraps",
     ],
     generalInfo: [
       { label: "Chemical Symbol", value: "W" },
       { label: "Atomic No.", value: "74" },
-      { label: "Material Profile", value: "Dense refractory metal" },
-      { label: "Common Need", value: "Heat resistance and alloy feed" },
+      { label: "Atomic Weight", value: "183.84" },
+      { label: "Density g/cm3", value: "19.3" },
     ],
   },
   {
@@ -204,8 +201,8 @@ export const productMetals: ProductMetal[] = [
     generalInfo: [
       { label: "Chemical Symbol", value: "Mo" },
       { label: "Atomic No.", value: "42" },
-      { label: "Material Profile", value: "High-temperature refractory metal" },
-      { label: "Common Need", value: "Conductivity and low thermal expansion" },
+      { label: "Atomic Weight", value: "95.94" },
+      { label: "Density g/cm3", value: "10.2" },
     ],
   },
   {
@@ -235,8 +232,8 @@ export const productMetals: ProductMetal[] = [
     generalInfo: [
       { label: "Chemical Symbol", value: "Nb" },
       { label: "Atomic No.", value: "41" },
-      { label: "Material Profile", value: "Specialty alloying input" },
-      { label: "Common Need", value: "Strength and temperature capability" },
+      { label: "Atomic Weight", value: "92.90638" },
+      { label: "Density g/cm3", value: "8.6" },
     ],
   },
 ];
@@ -373,5 +370,5 @@ export const qualityPillars: SupportCard[] = [
 
 export const homeImages = {
   hero: rocketBackground,
-  about: cuttingImage,
+  about: aircraftEngine,
 };

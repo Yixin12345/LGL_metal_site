@@ -8,7 +8,7 @@ export default function TermsOfUsePage() {
       sections={[
         {
           title: "Website Purpose",
-          body: "This website is intended to present LL Metal Tech services, capabilities, and contact information for prospective clients and partners. Content is provided for general business information and does not create a binding offer unless confirmed through direct commercial agreement.",
+          body: "This website is intended to present LGL Metal services, capabilities, and contact information for prospective clients and partners. Content is provided for general business information and does not create a binding offer unless confirmed through direct commercial agreement.",
         },
         {
           title: "Content and Availability",

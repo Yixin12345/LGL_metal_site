@@ -19,8 +19,8 @@ export function AboutSection() {
           <Reveal>
             <SectionHeading
               eyebrow="About Us"
-              title="A Montreal-Based Niche Market Supplier"
-              description="LL Metal Tech is a specialized supplier focused on hafnium for plasma cutting electrodes, along with selected minor metals, alloys, and high-value metal materials for industrial buyers. We help customers secure hard-to-source inputs with commercial responsiveness and practical coordination."
+              title="A Montreal-based trader and supplier of minor metals"
+              description="LGL Metal is a specialized trader and supplier focused on selected minor metals, alloys, and high-value metal materials for industrial buyers. We help customers secure hard-to-source inputs with commercial responsiveness and practical coordination."
             />
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
               Our position in Canada, combined with relationships across qualified
@@ -43,7 +43,7 @@ export function AboutSection() {
               <div className="relative overflow-hidden rounded-[1.6rem]">
                 <Image
                   src={homeImages.about}
-                  alt="Metal processing environment representing specialized refractory and minor metal applications."
+                  alt="Aircraft turbine engine representing high-temperature minor metal applications."
                   width={920}
                   height={640}
                   sizes="(max-width: 1024px) 100vw, 50vw"

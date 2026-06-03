@@ -32,10 +32,10 @@ export function HeroSection() {
               Hafnium / Tungsten / Molybdenum / Niobium
             </div>
             <h1 className="text-balance mt-7 max-w-4xl text-4xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-5xl lg:text-[5rem]">
-              Specialty Metals for Plasma Cutting, Alloying, and High-Temperature Manufacturing
+              Minor metals for alloying and high-temperature manufacturing
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-200/92 sm:text-lg">
-              LL Metal Tech helps industrial buyers source hafnium, tungsten,
+              LGL Metal helps industrial buyers source hafnium, tungsten,
               molybdenum, and niobium with clearer commercial coordination,
               application awareness, and dependable follow-through from inquiry
               to shipment.

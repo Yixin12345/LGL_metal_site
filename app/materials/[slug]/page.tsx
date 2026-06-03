@@ -35,8 +35,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${material.name} | LL Metal Tech Material Gallery`,
-    description: material.description,
+    title: `${material.name} | LGL Metal Material Gallery`,
+    description: Array.isArray(material.description)
+      ? material.description.join(" ")
+      : material.description,
   };
 }
 
@@ -47,6 +49,8 @@ export default async function MaterialPage({ params }: PageProps) {
   if (!material) {
     notFound();
   }
+
+  const galleryItems = material.gallery.filter((item) => item.image !== material.image);
 
   return (
     <>
@@ -66,10 +70,7 @@ export default async function MaterialPage({ params }: PageProps) {
 
             <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(420px,1.1fr)] lg:items-center">
               <div>
-                <p className="text-[0.74rem] font-semibold uppercase tracking-[0.28em] text-[var(--brand-copper)]">
-                  {material.kicker}
-                </p>
-                <div className="mt-4 flex items-end gap-5">
+                <div className="flex items-end gap-5">
                   <h1 className="text-5xl font-bold tracking-tight text-slate-950 sm:text-6xl">
                     {material.name}
                   </h1>
@@ -77,9 +78,14 @@ export default async function MaterialPage({ params }: PageProps) {
                     {material.symbol}
                   </span>
                 </div>
-                <p className="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
-                  {material.description}
-                </p>
+                <div className="mt-6 space-y-4 text-base leading-8 text-slate-600 sm:text-lg">
+                  {(Array.isArray(material.description)
+                    ? material.description
+                    : [material.description]
+                  ).map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
 
               <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-950 shadow-[0_24px_60px_rgba(15,23,42,0.12)]">
@@ -141,7 +147,7 @@ export default async function MaterialPage({ params }: PageProps) {
                     {material.name} photos and process views
                   </h2>
                 </div>
-                <MaterialGalleryViewer items={material.gallery} />
+                <MaterialGalleryViewer items={galleryItems} />
               </div>
             </div>
           </Container>

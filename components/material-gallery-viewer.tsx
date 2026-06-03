@@ -17,14 +17,14 @@ export function MaterialGalleryViewer({
     <div className="rounded-[1.5rem] border border-slate-200 bg-white p-4 shadow-[0_24px_60px_rgba(15,23,42,0.08)] sm:p-5">
       <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_240px]">
         <div className="overflow-hidden rounded-[1.15rem] border border-slate-200 bg-[linear-gradient(180deg,#f8fafc_0%,#edf2f7_100%)]">
-          <div className="relative aspect-[16/10]">
+          <div className="relative h-[420px] sm:h-[500px] lg:h-[560px]">
             <Image
               src={activeItem.image}
               alt={activeItem.title}
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 760px"
-              className="object-contain p-4 sm:p-6"
+              className="object-contain p-3 sm:p-5"
             />
           </div>
         </div>
@@ -36,9 +36,11 @@ export function MaterialGalleryViewer({
           <h2 className="mt-3 text-xl font-bold leading-tight text-slate-900">
             {activeItem.title}
           </h2>
-          <p className="mt-3 text-sm leading-7 text-slate-600">
-            {activeItem.caption}
-          </p>
+          {activeItem.caption ? (
+            <p className="mt-3 text-sm leading-7 text-slate-600">
+              {activeItem.caption}
+            </p>
+          ) : null}
           <p className="mt-4 text-sm font-medium text-slate-400">
             {String(activeIndex + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
           </p>
@@ -62,7 +64,7 @@ export function MaterialGalleryViewer({
                     alt=""
                     fill
                     sizes="68px"
-                    className="object-cover"
+                    className="object-contain p-1"
                   />
                 </span>
                 <span className="min-w-0 text-sm font-semibold leading-5 text-slate-700">

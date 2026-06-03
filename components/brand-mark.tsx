@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { cn } from "@/lib/cn";
 import { siteConfig } from "@/lib/site-data";
-import logoMark from "@/logo-mark.png";
+import logoMark from "@/LGL_logo-silver.png";
 
 export function BrandMark({
   size = "header",
@@ -17,12 +17,12 @@ export function BrandMark({
     <Link
       href="/#home"
       className="inline-flex shrink-0 items-center gap-3 sm:gap-4"
-      aria-label="LL Metal Tech home"
+      aria-label="LGL Metal home"
     >
       <span
         className={cn(
           "flex shrink-0 items-center justify-center",
-          isFooter ? "h-[52px] w-[52px]" : "h-[58px] w-[58px] sm:h-[62px] sm:w-[62px]",
+          isFooter ? "h-[46px] w-[54px]" : "h-[50px] w-[60px] sm:h-[54px] sm:w-[64px]",
         )}
       >
         <Image
@@ -31,8 +31,7 @@ export function BrandMark({
           priority={size === "header"}
           sizes="64px"
           className={cn(
-            "h-auto w-auto select-none",
-            isFooter ? "max-h-[52px] max-w-[52px]" : "max-h-[58px] max-w-[58px] sm:max-h-[62px] sm:max-w-[62px]",
+            "h-full w-full select-none object-contain",
           )}
         />
       </span>

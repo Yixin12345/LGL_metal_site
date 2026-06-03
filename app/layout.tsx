@@ -12,13 +12,13 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "LL Metal Tech | Hafnium, Minor Metals & Industrial Materials",
+  title: "LGL Metal | Minor Metals for Alloying & High-Temperature Manufacturing",
   description: siteConfig.description,
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "LL Metal Tech | Hafnium, Minor Metals & Industrial Materials",
+    title: "LGL Metal | Minor Metals for Alloying & High-Temperature Manufacturing",
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LL Metal Tech | Hafnium, Minor Metals & Industrial Materials",
+    title: "LGL Metal | Minor Metals for Alloying & High-Temperature Manufacturing",
     description: siteConfig.description,
   },
 };

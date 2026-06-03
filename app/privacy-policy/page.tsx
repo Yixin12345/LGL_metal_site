@@ -4,7 +4,7 @@ export default function PrivacyPolicyPage() {
   return (
     <LegalPage
       title="Privacy Policy"
-      description="This placeholder privacy page gives LL Metal Tech a production-safe legal route until company-specific policy language is provided."
+      description="This placeholder privacy page gives LGL Metal a production-safe legal route until company-specific policy language is provided."
       sections={[
         {
           title: "Information We Collect",
