@@ -3,10 +3,8 @@ import { Container } from "@/components/container";
 import { navigation, siteConfig } from "@/lib/site-data";
 
 export function Footer() {
-  const quickLinks = navigation.filter((item) => !["Home", "Contact"].includes(item.label));
-
   return (
-    <footer id="contact" className="bg-[#0b1321] py-14 text-slate-300">
+    <footer className="bg-[#0b1321] py-14 text-slate-300">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-start">
           <div>
@@ -23,7 +21,7 @@ export function Footer() {
                 Quick Links
               </h3>
               <div className="mt-5 space-y-3">
-                {quickLinks.map((item) => (
+                {navigation.slice(1).map((item) => (
                   <a
                     key={item.label}
                     href={item.href}

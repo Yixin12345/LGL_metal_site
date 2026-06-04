@@ -94,7 +94,6 @@ export const navigation: NavItem[] = [
   { label: "Metals", href: "/metals" },
   { label: "Supply", href: "/supply" },
   { label: "Quality", href: "/quality" },
-  { label: "Contact", href: "/#contact" },
 ];
 
 export const heroHighlights = [
