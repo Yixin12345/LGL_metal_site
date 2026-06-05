@@ -14,15 +14,13 @@ import hfCrystalBars from "@/P_hafnium/Crystal bars Zr0.2.jpg";
 import hfCrystalScraps from "@/P_hafnium/Crystal scraps.jpg";
 import hfEbmIngot from "@/P_hafnium/EBM ingot —5N、Fe 6ppm、Zr 760ppm.jpg";
 import hfTarget from "@/P_hafnium/hafnium target.jpg";
+import hfPellets from "@/P_hafnium/Hafnium pellets.jpg";
 import hfWire from "@/P_hafnium/Hafnium wire(Various sizes).png";
 import moImage from "@/P_molybdenum/mo.png";
 import moBarStock from "@/P_molybdenum/bar-stock.jpg";
 import moCurvedStock from "@/P_molybdenum/curved-stock.jpg";
 import moStraightRods from "@/P_molybdenum/straight-rods.jpg";
 import nbImage from "@/P_niobium/nb.png";
-import nbBulkRods from "@/P_niobium/bulk-rods.jpg";
-import nbPrecisionInspection from "@/P_niobium/precision-inspection.png";
-import nbRodEnds from "@/P_niobium/rod-ends.jpg";
 import wImage from "@/P_tungsten/w.png";
 import wBars from "@/P_tungsten/Tungsten bars.png";
 import wScraps from "@/P_tungsten/Tungsten scraps.png";
@@ -60,7 +58,8 @@ type ApplicationInsight = {
 export type ProductGalleryItem = {
   title: string;
   caption: string;
-  image: StaticImageData;
+  image?: StaticImageData;
+  videoSrc?: string;
 };
 
 type SupportCard = {
@@ -94,6 +93,7 @@ export const navigation: NavItem[] = [
   { label: "Metals", href: "/metals" },
   { label: "Supply", href: "/supply" },
   { label: "Quality", href: "/quality" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export const heroHighlights = [
@@ -131,11 +131,14 @@ export const productMetals: ProductMetal[] = [
       { title: "EBM ingot", caption: "5N, Fe 6ppm, Zr 760ppm", image: hfEbmIngot },
       { title: "Hafnium wire", caption: "Various sizes", image: hfWire },
       { title: "Hafnium target", caption: "", image: hfTarget },
+      { title: "Hafnium pellets", caption: "Ø 2x5mm", image: hfPellets },
     ],
     forms: [
       "Crystal bar",
       "EB melted ingot",
-      "Wires",
+      "Wire",
+      "Target",
+      "Pellets",
     ],
     generalInfo: [
       { label: "Chemical Symbol", value: "Hf" },
@@ -220,14 +223,10 @@ export const productMetals: ProductMetal[] = [
     image: nbImage,
     gallery: [
       { title: "Niobium Product Overview", caption: "Primary niobium product visual for alloying and engineered material use.", image: nbImage },
-      { title: "Bulk Rods", caption: "Packed rod inventory prepared for industrial material handling.", image: nbBulkRods },
-      { title: "Rod Ends", caption: "Closer view of cut or machined rod inventory.", image: nbRodEnds },
-      { title: "Precision Inspection", caption: "Measured component inspection during production workflow.", image: nbPrecisionInspection },
+      { title: "Vacuum grade Niobium", caption: "99.99%  Ta<400ppm", videoSrc: "/P_niobium/vacuum-grade-niobium.mp4" },
     ],
     forms: [
-      "Alloy-addition material programs",
-      "Specialty input sourcing discussions",
-      "Engineered-material and performance metallurgy review",
+      "Vacuum grade Niobium",
     ],
     generalInfo: [
       { label: "Chemical Symbol", value: "Nb" },

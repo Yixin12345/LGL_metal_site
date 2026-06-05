@@ -13,19 +13,37 @@ export function MaterialGalleryViewer({
   const [activeIndex, setActiveIndex] = useState(0);
   const activeItem = items[activeIndex];
 
+  if (!activeItem) {
+    return (
+      <div className="rounded-[1.5rem] border border-slate-200 bg-white p-8 text-sm leading-7 text-slate-500 shadow-[0_24px_60px_rgba(15,23,42,0.08)]">
+        Additional gallery images are not available for this material yet.
+      </div>
+    );
+  }
+
   return (
     <div className="rounded-[1.5rem] border border-slate-200 bg-white p-4 shadow-[0_24px_60px_rgba(15,23,42,0.08)] sm:p-5">
       <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_240px]">
         <div className="overflow-hidden rounded-[1.15rem] border border-slate-200 bg-[linear-gradient(180deg,#f8fafc_0%,#edf2f7_100%)]">
           <div className="relative h-[420px] sm:h-[500px] lg:h-[560px]">
-            <Image
-              src={activeItem.image}
-              alt={activeItem.title}
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 760px"
-              className="object-contain p-3 sm:p-5"
-            />
+            {activeItem.videoSrc ? (
+              <video
+                src={activeItem.videoSrc}
+                controls
+                playsInline
+                preload="metadata"
+                className="h-full w-full bg-slate-950 object-contain"
+              />
+            ) : activeItem.image ? (
+              <Image
+                src={activeItem.image}
+                alt={activeItem.title}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 760px"
+                className="object-contain p-3 sm:p-5"
+              />
+            ) : null}
           </div>
         </div>
 
@@ -59,13 +77,19 @@ export function MaterialGalleryViewer({
                 aria-label={`Show ${item.title}`}
               >
                 <span className="relative h-14 overflow-hidden rounded-[0.65rem] bg-slate-100">
-                  <Image
-                    src={item.image}
-                    alt=""
-                    fill
-                    sizes="68px"
-                    className="object-contain p-1"
-                  />
+                  {item.videoSrc ? (
+                    <span className="flex h-full w-full items-center justify-center text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Video
+                    </span>
+                  ) : item.image ? (
+                    <Image
+                      src={item.image}
+                      alt=""
+                      fill
+                      sizes="68px"
+                      className="object-contain p-1"
+                    />
+                  ) : null}
                 </span>
                 <span className="min-w-0 text-sm font-semibold leading-5 text-slate-700">
                   {item.title}

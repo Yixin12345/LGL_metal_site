@@ -107,7 +107,7 @@ export default async function MaterialPage({ params }: PageProps) {
               <aside className="space-y-6">
                 <div className="rounded-[1.25rem] border border-slate-200 bg-slate-50 p-6">
                   <h2 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-900">
-                    Supply Forms
+                    LGL Metal Supply Forms
                   </h2>
                   <div className="mt-5 space-y-3">
                     {material.forms.map((form) => (
