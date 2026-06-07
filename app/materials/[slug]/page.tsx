@@ -34,11 +34,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
+  const description = material.detailDescription ?? material.description;
+
   return {
     title: `${material.name} | LGL Metal Material Gallery`,
-    description: Array.isArray(material.description)
-      ? material.description.join(" ")
-      : material.description,
+    description: Array.isArray(description)
+      ? description.join(" ")
+      : description,
   };
 }
 
@@ -50,6 +52,7 @@ export default async function MaterialPage({ params }: PageProps) {
     notFound();
   }
 
+  const description = material.detailDescription ?? material.description;
   const galleryItems = material.gallery.filter((item) => item.image !== material.image);
 
   return (
@@ -79,9 +82,9 @@ export default async function MaterialPage({ params }: PageProps) {
                   </span>
                 </div>
                 <div className="mt-6 space-y-4 text-base leading-8 text-slate-600 sm:text-lg">
-                  {(Array.isArray(material.description)
-                    ? material.description
-                    : [material.description]
+                  {(Array.isArray(description)
+                    ? description
+                    : [description]
                   ).map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
@@ -103,6 +106,21 @@ export default async function MaterialPage({ params }: PageProps) {
 
         <section className="py-16 sm:py-20">
           <Container>
+            {material.slug === "hafnium" ? (
+              <div className="mb-12 rounded-[1.25rem] border border-amber-200 bg-amber-50 p-6 sm:p-7">
+                <h2 className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-950">
+                  Compliance Notice
+                </h2>
+                <p className="mt-4 text-sm leading-7 text-amber-950/80 sm:text-base sm:leading-8">
+                  As Hafnium&apos;s primary application is in the nuclear
+                  industry, it is classified as a &quot;dual-use&quot; metal
+                  under the Non-Proliferation of Nuclear Weapons Treaty. Please
+                  note that import/export licenses and End-User Statements
+                  (EUS) are required for transactions in a number of instances.
+                </p>
+              </div>
+            ) : null}
+
             <div className="grid gap-10 lg:grid-cols-[330px_minmax(0,1fr)]">
               <aside className="space-y-6">
                 <div className="rounded-[1.25rem] border border-slate-200 bg-slate-50 p-6">
@@ -136,6 +154,7 @@ export default async function MaterialPage({ params }: PageProps) {
                     ))}
                   </dl>
                 </div>
+
               </aside>
 
               <div>

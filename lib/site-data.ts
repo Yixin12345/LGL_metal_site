@@ -14,7 +14,7 @@ import hfCrystalBars from "@/P_hafnium/Crystal bars Zr0.2.jpg";
 import hfCrystalScraps from "@/P_hafnium/Crystal scraps.jpg";
 import hfEbmIngot from "@/P_hafnium/EBM ingot —5N、Fe 6ppm、Zr 760ppm.jpg";
 import hfTarget from "@/P_hafnium/hafnium target.jpg";
-import hfPellets from "@/P_hafnium/Hafnium pellets.jpg";
+import hfPellets from "@/P_hafnium/Hafnium pellets.png";
 import hfWire from "@/P_hafnium/Hafnium wire(Various sizes).png";
 import moImage from "@/P_molybdenum/mo.png";
 import moBarStock from "@/P_molybdenum/bar-stock.jpg";
@@ -38,6 +38,7 @@ export type ProductMetal = {
   symbol: string;
   kicker: string;
   description: string | string[];
+  detailDescription?: string | string[];
   highlights: string[];
   image: StaticImageData;
   gallery: ProductGalleryItem[];
@@ -118,6 +119,8 @@ export const productMetals: ProductMetal[] = [
     description: [
       "Hafnium is a rare refractory metal primarily used in aerospace superalloys, nuclear control rods, plasma cutting electrodes, and semiconductor manufacturing. It has a melting point of approximately 2,233°C and offers excellent high-temperature strength, oxidation resistance, and corrosion resistance.",
     ],
+    detailDescription:
+      "LGL Metal is your trusted source for high-performance Hafnium, a rare refractory metal vital for aerospace superalloys, plasma cutting, and semiconductor manufacturing. With a melting point of ~2,233°C, our Hafnium products offer exceptional thermal stability, oxidation resistance, and corrosion defense.",
     highlights: [
       "Electrode-focused industrial demand",
       "Purity-conscious commercial coordination",
@@ -134,10 +137,10 @@ export const productMetals: ProductMetal[] = [
       { title: "Hafnium pellets", caption: "Ø 2x5mm", image: hfPellets },
     ],
     forms: [
-      "Crystal bar",
-      "EB melted ingot",
-      "Wire",
-      "Target",
+      "Crystal Bars",
+      "EB Melted Ingots",
+      "Wires",
+      "Sputtering Targets",
       "Pellets",
     ],
     generalInfo: [
@@ -154,6 +157,11 @@ export const productMetals: ProductMetal[] = [
     kicker: "Bars, refractory demand, alloy feed",
     description:
       "Tungsten (W) is a high-density refractory metal with a melting point of 3,422°C. It is widely used in aerospace, defense, electronics, tooling, mining, and high-temperature industrial applications due to its outstanding heat resistance, strength, and durability.",
+    detailDescription: [
+      "As a high-density refractory metal with a remarkable melting point of 3,422°C and a density of 19.3 g/cm³, Tungsten (W) is engineered for the most demanding environments. LGL Metal supplies premium-grade Tungsten products widely utilized in aerospace, defense, electronics, tooling, mining, and high-temperature industrial applications due to its outstanding heat resistance, strength, and durability.",
+      "Our Tungsten metal bars and rods are manufactured from high-purity tungsten powder through a precise densification process, including expert powder blending, pressing, and sintering to ensure exceptional structural integrity.",
+      "According to different chemical compositions and applications, they can be divided into three grades: TW-1, TW-2 and TW-4. TW-1 is mainly used as raw material for tungsten-based alloys, TW-2 is used as raw material for processed materials, and TW-4 is used as an alloy additive.",
+    ],
     highlights: [
       "Round and square bar programs",
       "Powder-metallurgy based material routes",
@@ -167,7 +175,7 @@ export const productMetals: ProductMetal[] = [
     ],
     forms: [
       "Tungsten bars",
-      "Tungsten scraps",
+      "Tungsten rods",
     ],
     generalInfo: [
       { label: "Chemical Symbol", value: "W" },
