@@ -22,8 +22,15 @@ import moCurvedStock from "@/P_molybdenum/curved-stock.jpg";
 import moStraightRods from "@/P_molybdenum/straight-rods.jpg";
 import nbImage from "@/P_niobium/nb.png";
 import wImage from "@/P_tungsten/w.png";
-import wBars from "@/P_tungsten/Tungsten bars.png";
-import wScraps from "@/P_tungsten/Tungsten scraps.png";
+import wBars from "@/P_tungsten/Tungsten bars.jpg";
+import wBars2 from "@/P_tungsten/Tungsten bars 2.jpg";
+import wBars3 from "@/P_tungsten/Tungsten bars 3.jpg";
+import wRods from "@/P_tungsten/Tungsten rods.jpg";
+import wRods1 from "@/P_tungsten/Tungsten rods 1.jpg";
+import wRods2 from "@/P_tungsten/Tungsten rods 2.jpg";
+import wWires from "@/P_tungsten/Tungsten wires.jpg";
+import wScraps from "@/P_tungsten/Tungsten scraps.jpg";
+import wScraps1 from "@/P_tungsten/Tungsten scraps 1.jpg";
 import aircraftEngine from "@/aircraft-engine.png";
 import rocketBackground from "@/rocket_background.jpg";
 
@@ -119,8 +126,10 @@ export const productMetals: ProductMetal[] = [
     description: [
       "Hafnium is a rare refractory metal primarily used in aerospace superalloys, nuclear control rods, plasma cutting electrodes, and semiconductor manufacturing. It has a melting point of approximately 2,233°C and offers excellent high-temperature strength, oxidation resistance, and corrosion resistance.",
     ],
-    detailDescription:
+    detailDescription: [
       "LGL Metal is your trusted source for high-performance Hafnium, a rare refractory metal vital for aerospace superalloys, plasma cutting, and semiconductor manufacturing. With a melting point of ~2,233°C, our Hafnium products offer exceptional thermal stability, oxidation resistance, and corrosion defense.",
+      "As Hafnium's primary application is in the nuclear industry, it is classified as a \"dual-use\" metal under the Non-Proliferation of Nuclear Weapons Treaty. Please note that import/export licenses and End-User Statements (EUS) are required for transactions in a number of instances.",
+    ],
     highlights: [
       "Electrode-focused industrial demand",
       "Purity-conscious commercial coordination",
@@ -169,13 +178,21 @@ export const productMetals: ProductMetal[] = [
     ],
     image: wImage,
     gallery: [
-      { title: "Tungsten Product Overview", caption: "Primary tungsten product visual for refractory-metal discussions.", image: wImage },
-      { title: "Tungsten bars", caption: "", image: wBars },
-      { title: "Tungsten scraps", caption: "", image: wScraps },
+      { title: "Tungsten bar", caption: "", image: wBars },
+      { title: "Tungsten bar", caption: "", image: wBars2 },
+      { title: "Tungsten bar", caption: "", image: wBars3 },
+      { title: "Tungsten rod", caption: "", image: wRods },
+      { title: "Tungsten rod", caption: "", image: wRods1 },
+      { title: "Tungsten rod", caption: "", image: wRods2 },
+      { title: "Tungsten wire", caption: "", image: wWires },
+      { title: "Tungsten scrap", caption: "", image: wScraps },
+      { title: "Tungsten scrap", caption: "", image: wScraps1 },
     ],
     forms: [
       "Tungsten bars",
       "Tungsten rods",
+      "Tungsten wires",
+      "Tungsten scraps",
     ],
     generalInfo: [
       { label: "Chemical Symbol", value: "W" },
